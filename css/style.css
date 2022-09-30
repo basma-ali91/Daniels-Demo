@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* START HOME SECTION */
+
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-bg {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 18px;
+  padding-top: 20px;
+  font-weight: 800;
+}
+
+.navbar-nav .nav-item {
+  font-size: 14px;
+  margin: 20px 20px 0;
+}
+
+.navbar-nav .nav-item a {
+  color: white !important;
+}
+
+#navbarSupportedContent {
+  justify-content: flex-end;
+}
+
+.homeContent {
+  text-align: center;
+  color: #fff;
+}
+
+.homeContent h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.homeContent p {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.homeContent .homeSocialIcon a {
+  color: #fff;
+}
+
+.homeContent .homeSocialIcon span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 0.9rem;
+  border-radius: 50%;
+  line-height: 35px;
+}
+
+/* End Homr Section */
+
+/* START ABOUT section */
+
+#about {
+  padding: 6rem 3rem;
+}
+
+#about .info h2 {
+  font-weight: 800;
+}
+
+#about .info .title {
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+#about .info p {
+  text-align: justify;
+  font-size: 1rem;
+  color: #748182;
+  line-height: 1.6;
+  margin-bottom: 1.9rem;
+}
+
+#about .info p span {
+  font-weight: 800;
+}
+
+#about .skills .item {
+  margin-bottom: 2rem;
+}
+
+#about .skills .skill-progress {
+  padding: 2px 10px;
+  border-radius: 5px;
+  background: #f7f7f7;
+  position: relative;
+  box-shadow: 0px 2px 7px rgb(0 0 0 / 15%);
+}
+
+#about .skills .skill-progress h6 {
+  font-size: 0.9rem;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  top: 4px;
+}
+#about .skills .skill-progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #1c1c1c;
+  border-radius: 5px;
+}
+
+#about .skills .skill-progress span:after {
+  content: attr(data-value);
+  position: absolute;
+  font-size: 0.9rem;
+  right: 10px;
+  top: 6px;
+  color: #fff;
+}
+
+#about .info-btn a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-right: 0.2rem;
+  border-radius: 5px;
+  border: 1px solid #1c1c1c;
+  font-size: 0.9rem;
+}
+
+#about .info-btn .but {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+#about .info-btn .bg-but {
+  background-color: #eee;
+  color: #1c1c1c;
+}
+
+#about .info-btn .but:hover {
+  background-color: #eee;
+  color: #1c1c1c;
+}
+
+#about .info-btn .bg-but:hover {
+  background-color: #1c1c1c;
+  color: #eee;
+}
+
+/* END ABOUT SECTION */
+
+/* start services section */
+
+#service,
+#works,
+#client,
+#blog,
+#contact {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#service,
+#client,
+#blog {
+  background-color: #f7f7f7;
+}
+
+#service .service-title,
+#works .works-title,
+#client .client-title,
+#blog .blog-title,
+#contact .contact-title {
+  text-align: center;
+}
+
+#service .service-title h2,
+#works .works-title h2,
+#client .client-title h2,
+#blog .blog-title h2,
+#contact .contact-title h2 {
+  margin-bottom: 3rem;
+  font-weight: 900;
+  font-size: 3rem;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+}
+
+#service .service-title h2:after,
+#works .works-title h2:after,
+#client .client-title h2:after,
+#blog .blog-title h2:after,
+#contact .contact-title h2:after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url("../img/dots.png");
+  background-repeat: repeat;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -10px;
+  z-index: -1;
+}
+
+#service .row {
+  margin-bottom: 2rem;
+}
+
+#service .row .card {
+  padding: 2.5rem 0;
+  border: none;
+  box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+}
+
+#service .row .card-body {
+  text-align: center;
+}
+
+#service .row .card-body span {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+}
+
+#service .row .card-body span:hover {
+  background-color: #1c1c1c;
+  color: #f4f4f4;
+}
+
+#service .row .card-body span i {
+  font-size: 1.4rem;
+}
+
+#service .row .card-body h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+#service .row .card-body p {
+  font-size: 1rem;
+  color: #748182;
+  line-height: 1.6;
+}
+
+/* end services section */
+
+/* start works section */
+
+#works .buttons {
+  margin-bottom: 3rem;
+}
+
+#works .buttons button:hover{
+    cursor: pointer;
+}
+#works .buttons button:focus{
+    box-shadow: none;
+}
+#works .buttons button {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #222;
+}
+
+#works .works-img {
+  width: 90%;
+  margin: auto;
+}
+
+#works .img-item {
+  position: relative;
+  overflow: hidden;
+}
+
+#works .img-item .img-overlay {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+  left: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+#works .img-item:hover .img-overlay {
+  opacity: 1;
+}
+
+#works .img-item .img-overlay .overlay-info {
+  text-align: center;
+}
+
+#works .img-item .img-overlay .overlay-info h6 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 15px;
+  transition: all 0.5s;
+}
+
+#works .img-item .img-overlay .overlay-info span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 50%;
+  background: #111;
+  font-size: 0.8rem;
+}
+#works .img-item .img-overlay .overlay-info span a {
+  color: #eee;
+}
+
+#works .works-img .row {
+  margin-bottom: 1.5rem;
+}
+
+/* end works section */
+
+/* start client section */
+
+#client .client-title {
+  margin-bottom: 5rem;
+}
+
+#client .client-content {
+  margin-bottom: 6rem;
+}
+
+#client .carousel-indicators {
+  bottom: -5rem;
+}
+
+#client .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #869791;
+}
+
+#client .carousel-item p {
+  word-spacing: 2px;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  color: #748182;
+}
+
+#client .carousel-item h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 30px 0 5px;
+  color: #748182;
+}
+
+#client .carousel-item span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+}
+
+/* end client section */
+
+/* start number section */
+
+#number {
+  padding: 5rem 1rem;
+}
+
+.number-item {
+  text-align: center;
+}
+
+#number .number-item span {
+  display: inline-block;
+  font-size: 1.9rem;
+  margin-bottom: 1.2rem;
+}
+
+#number .number-item h3 {
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+}
+
+#number .number-item p {
+  font-weight: 600;
+  margin-bottom: 1.9rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  color: #748182;
+}
+end number section
+
+/* start blog section */
+  #blog{
+    padding-bottom: 8rem;
+}
+
+#blog .blog-item{
+    display: inline-block;
+    padding: 0 .7rem;
+}
+
+#blog .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #111;
+    margin-bottom: -6rem;
+}
+
+#blog .blog-item-content{
+     padding: .7rem .2rem; 
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
+
+#blog .blog-item-content h6{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+}
+
+#blog .blog-item-content h4{
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#blog .blog-item-content a{
+    color: #888;;
+}  
+/* end blog section */
+
+/* start contact section */
+
+#contact .contact-item {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#contact .contact-info {
+  margin: 0 5rem;
+}
+
+#contact .contact-item span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  font-size: 1.4rem;
+  line-height: 60px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  margin-bottom: 1.5rem;
+}
+
+#contact .contact-item span:hover {
+  background-color: #1c1c1c;
+  color: #f4f4f4;
+}
+
+#contact .contact-item h5 {
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+#contact .contact-item p {
+  font-size: 1.9;
+  color: #748182;
+}
+
+#contact .form-control {
+  border: none;
+}
+
+#contact .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+#contact .contact-form textarea {
+  margin-top: 1rem;
+}
+
+#contact .contact-form button {
+  background-color: #1c1c1c;
+  color: #fff;
+  width: 20%;
+  font-size: 1.1rem;
+}
+
+#contact .contact-form button:hover {
+  background-color: #fff;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+}
+
+/* end contact section */
+
+/* start footer section */
+footer {
+  background-color: #1c1c1c;
+  padding: 1.9rem;
+}
+footer div {
+  text-align: center;
+}
+
+footer div p {
+  font-size: 0.8rem;
+  word-spacing: 2px;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  color: #748182;
+}
+/* end footer section */
+
+/* media query */
+@media screen and (max-width: 767px) {
+  #navbarSupportedContent {
+    background-color: white;
+    text-align: center;
+  }
+  #navbarSupportedContent ul li a {
+    color: black !important;
+  }
+  .navbar-light .navbar-toggler {
+    border-color: transparent;
+  }
+  #about {
+    padding: 5rem 1rem;
+  }
+  #about .info {
+    margin-top: 2rem;
+  }
+  #service .row {
+    margin-bottom: 0;
+  }
+  #service .row .card {
+    margin-bottom: 1rem;
+  }
+
+  #contact .contact-info {
+    margin: 0;
+  }
+  #contact .contact-form input {
+    margin-bottom: 1rem;
+  }
+  #contact .contact-form button {
+    width: 30%;
+    font-size: 0.8rem;
+    padding: 0.5rem 2.5rem;
+  }
+
+  #works .img-item {
+    margin-bottom: 1rem;
+  }
+  #works .works-img .row {
+    margin-bottom: 0;
+}
+}

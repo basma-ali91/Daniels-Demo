@@ -537,7 +537,7 @@ end number section
 #contact .contact-form button {
   background-color: #1c1c1c;
   color: #fff;
-  width: 20%;
+  width: 25%;
   font-size: 1.1rem;
 }
 
@@ -601,7 +601,7 @@ footer div p {
   #contact .contact-form button {
     width: 30%;
     font-size: 0.8rem;
-    padding: 0.5rem 2.5rem;
+  
   }
 
   #works .img-item {

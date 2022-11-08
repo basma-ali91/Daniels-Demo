@@ -579,6 +579,9 @@ footer div p {
   .navbar-light .navbar-toggler {
     border-color: transparent;
   }
+  .homeContent h1 ,.homeContent p ,.homeContent span{
+    font-size: 1rem;
+  }
   #about {
     padding: 5rem 1rem;
   }

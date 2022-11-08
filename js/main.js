@@ -18,30 +18,37 @@ window.addEventListener("scroll", function () {
 
 })
 
+$("document").ready(function(){
+    var typed = new Typed('.element', {
+        strings: ['Web Develpoer', 'Web Designer'],
+        typeSpeed: 100,
+        loop:true,
+        backSpeed: 100,
+      });
+})
+
 
 // ----------------------counter section-----------
 
-// window.addEventListener("scroll",function(){
-//     let numberSction=document.getElementById("number");
-//     let numberSectionHeight=numberSction.scrollTop;
-
-//     console.log(numberSectionHeight)
-
-    // if(window.body.scrollTop>numberSectionHeight){
-    //     console.log("hi")
-    // }
-    
 
 
+let counter = 0 ,
+ counter1 = 0 ,
+ counter2 = 0,
+ counter3 = 0;
+ 
+let CounterSection=$("#number").offset().top;
+console.log(CounterSection)
 
-    
-// })
+$(window).scroll(function(){
+    let wScroll = $(window).scrollTop();
+    if( wScroll >  CounterSection -50){
+        console.log(wScroll)
 
+      
+    }
+})
 
-let counter = 0;
-let counter1 = 0;
-let counter2 = 0;
-let counter3 = 0;
 function countCustomer() {
 
     let happy_customer = document.getElementById("happy");
